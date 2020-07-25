@@ -1,8 +1,12 @@
 ## Sensortastic! ✨
 
 <p>
-  <img src="https://raw.githubusercontent.com/klaasnicolaas/ColoredBadges/prod/svg/dev/tools/grafana.svg" alt="grafana" style="vertical-align:top; margin:4px">
-  <img src="https://raw.githubusercontent.com/klaasnicolaas/ColoredBadges/prod/svg/dev/tools/influxdb.svg" alt="influxdb" style="vertical-align:top; margin:4px">
+  <a href="https://grafana.com" target="_blank">
+    <img src="https://raw.githubusercontent.com/klaasnicolaas/ColoredBadges/prod/svg/dev/tools/grafana.svg" alt="grafana" style="vertical-align:top; margin:4px">
+  </a>
+  <a href="https://www.influxdata.com" target="_blank">
+    <img src="https://raw.githubusercontent.com/klaasnicolaas/ColoredBadges/prod/svg/dev/tools/influxdb.svg" alt="influxdb" style="vertical-align:top; margin:4px">
+  </a>
 </p>
 
 ![Project Stage][project-stage-shield] ![Maintain Stage][maintain-stage-shield] [![Github License][license-shield]][license]
