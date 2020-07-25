@@ -8,14 +8,14 @@ With this project it's possible to collect temperature and humidity data using a
 
 If you have suggestions or questions, open an [issue][issues] or contribute via a [pull request][pr]!
 
-### 🧰 What do you need?
+## 🧰 What do you need?
 
 - ESP8266
 - DHT22 sensor (you can also use other types)
 - USB power :smile:
 - Docker :whale:
 
-#### Schematic
+### Schematic
 
 | DHT22 | NodeMCU / ESP8266 |
 | --- | --- |
@@ -25,20 +25,20 @@ If you have suggestions or questions, open an [issue][issues] or contribute via 
 
 If interested, I plan to design a circuit board for this project in the future.
 
-### How to setup
+## How to setup
 
 - You need Arduino IDE to configure some files, and use the serial monitor (other IDE's are okey).
 - You need the `ESP8266WebServer`,`Scheduler` and `InfluxDbClient` libraries.
 
 Further down this page you will find all information about which adjustments you have to make.
 
-### Credentials
+## Credentials
 
-#### Software
+### Software
 
 Before we can run Grafana and InfluxDB, there are a few values that we have to add in the yaml files for docker swarm / docker-compose.
 
-##### Docker-compose
+#### Docker-compose
 
 If you use the docker-compose option, adjust the `.env` file:
 
@@ -53,7 +53,7 @@ GRAFANA_PASSWORD=admin
 
 After this you can run it with `docker-compose up -d`
 
-##### Docker stack (swarm)
+#### Docker stack (swarm)
 
 If you use the docker stack deploy (swarm) option, adjust the `sensortastic.yml` file:
 
@@ -73,7 +73,7 @@ environment:
 
 You can deploy it with `docker stack deploy -c sensortastic.yml sensortastic`
 
-##### Grafana
+#### Grafana
 
 For Grafana we create the data source of influxdb in advance, for this you only need to add the database name and username / password to the `dataresource.yml` file. You can also skip this step and add your data source via the UI later.
 
@@ -92,9 +92,9 @@ datasources:
 
 ---
 
-#### Hardware
+### Hardware - Arduino
 
-Within the arduino project there is a `config.h`, which contains all the necessary variables that the maincode needs to run properly.
+Within the arduino project folder ([sensortastic](./Sensortastic)) there is a `config.h`, which contains all the necessary variables that the maincode needs to run properly.
 
 ```C++
 // Basic Information
