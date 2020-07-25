@@ -75,7 +75,7 @@ You can deploy it with `docker stack deploy -c sensortastic.yml sensortastic`
 
 ##### Grafana
 
-For grafana we only need to supplement the data source with the database name and admin account credentials. You can also skip this step and add your data source via the UI later.
+For Grafana we create the data source of influxdb in advance, for this you only need to add the database name and username / password to the `dataresource.yml` file. You can also skip this step and add your data source via the UI later.
 
 ```yaml
 datasources:
@@ -105,7 +105,7 @@ Within the arduino project there is a `config.h`, which contains all the necessa
 #define WIFI_PASSWORD   "ddoswillwork"
 
 // InfluxDB
-#define INFLUXDB_URL          "https://IP_TO_SERVER:8086"
+#define INFLUXDB_URL          "http://IP_TO_SERVER:8086"
 #define INFLUXDB_MEASUREMENT  "example"
 #define INFLUXDB_DB_NAME      "sensortastic"
 #define INFLUXDB_USER         "thebigboss"
