@@ -6,8 +6,8 @@
 </p>
 
 ![Project Stage][project-stage-shield] ![Maintain Stage][maintain-stage-shield] [![Github License][license-shield]][license]
-[![GitHub Last Commit][last-commit-shield]][commits] [![Github open issues][open-issues-shield]][issues] ![View Counter][view-counter-shield]
 
+[![GitHub Last Commit][last-commit-shield]][commits] [![Github open issues][open-issues-shield]][issues] ![View Counter][view-counter-shield]
 
 With this project it's possible to collect temperature and humidity data using an esp8266 and save it to an InfluxDB database. To make a nice dashboard overview in Grafana afterwards. It's also possible to access a web interface via the IP address, so that you can always view the values in a simple way (as seen in the screenshot below).
 
