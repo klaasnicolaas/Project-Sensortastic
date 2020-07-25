@@ -1,6 +1,15 @@
 ## Sensortastic! ✨
 
-With this project it's possible to collect temperature and humidity data using an esp8266 and save it to an InfluxDB database. To make a nice dashboard overview in Grafana afterwards. It's also possible to access a web interface via the IP address, so that you can always view the values per sensor in a simple way (as seen in the screenshot below).
+<p>
+  <img src="https://raw.githubusercontent.com/klaasnicolaas/ColoredBadges/prod/svg/dev/tools/grafana.svg" alt="grafana" style="vertical-align:top; margin:4px">
+  <img src="https://raw.githubusercontent.com/klaasnicolaas/ColoredBadges/prod/svg/dev/tools/influxdb.svg" alt="influxdb" style="vertical-align:top; margin:4px">
+</p>
+
+![Project Stage][project-stage-shield] ![Maintain Stage][maintain-stage-shield] [![Github License][license-shield]][license]
+[![GitHub Last Commit][last-commit-shield]][commits] [![Github open issues][open-issues-shield]][issues] ![View Counter][view-counter-shield]
+
+
+With this project it's possible to collect temperature and humidity data using an esp8266 and save it to an InfluxDB database. To make a nice dashboard overview in Grafana afterwards. It's also possible to access a web interface via the IP address, so that you can always view the values in a simple way (as seen in the screenshot below).
 
 <p align="center">
     <img src="./assets/img/webinterface.png" alt="drawing" width="350"/>
@@ -124,3 +133,13 @@ If you get an error, create then an [issue][issues] so that I can sort things ou
 
 [issues]: https://github.com/klaasnicolaas/Project-Sensortastic/issues
 [pr]: https://github.com/klaasnicolaas/Project-Sensortastic/pulls
+[commits]: https://github.com/klaasnicolaas/Project-Sensortastic/commits/master
+[license]: https://github.com/klaasnicolaas/Project-Sensortastic/blob/master/LICENSE
+
+
+[last-commit-shield]: https://img.shields.io/github/last-commit/klaasnicolaas/Project-Sensortastic
+[open-issues-shield]: https://img.shields.io/github/issues-raw/klaasnicolaas/Project-Sensortastic
+[license-shield]: https://img.shields.io/github/license/klaasnicolaas/Project-Sensortastic
+[view-counter-shield]: https://img.shields.io/github/search/klaasnicolaas/Project-Sensortastic/view
+[project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen
+[maintain-stage-shield]: https://img.shields.io/badge/maintained-yes-brightgreen
